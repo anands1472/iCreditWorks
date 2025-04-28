@@ -1,25 +1,19 @@
-/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-/* Base Styles */
 body,
 html {
   height: 100%;
   font-family: 'Helvetica Neue', sans-serif;
 }
-
 .container {
   display: flex;
   min-height: 100vh;
   background: url('images/background.png') no-repeat center center;
   background-size: cover;
 }
-
-/* Section Styles */
 .section {
   flex: 1;
   display: flex;
@@ -31,15 +25,8 @@ html {
   padding-right: 1rem;
   padding-left: 2rem;
 }
-
-/* Different Backgrounds for each section */
 .section1 {
-  /* background-color: #ff6b6b;  */
 }
-
-
-
-/* Login Section */
 .login-section {
   flex: 1;
   display: flex;
@@ -48,20 +35,15 @@ html {
   min-height: 100vh;
   width: 100%;
 }
-
 .login-section-div {
   width: 100%;
 }
-
 hr.solid {
   border-top: 3px solid #EA731F;
 }
-
 .userloginText {
   color: black;
 }
-
-/* Login Box */
 .login-box {
   width: 90%;
   background: #FFF;
@@ -69,7 +51,6 @@ hr.solid {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8px);
 }
-
 .login-box-header {
   width: 90%;
   background: #FFF;
@@ -78,37 +59,28 @@ hr.solid {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8px);
 }
-
 .login-box-footer {
   width: 90%;
   background: #FFF;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); */
   backdrop-filter: blur(8px);
   padding: 5px;
   background: gray;
 }
-
-/* Logo */
 .logo {
   display: block;
   margin: 0 auto 1rem;
   width: 200px;
 }
-
-/* Heading */
 h2 {
   text-align: center;
   margin-bottom: 1rem;
 }
-
-/* Form */
 form {
   display: flex;
   flex-direction: column;
 }
-
 input[type="email"],
 input[type="password"] {
   padding: 0.75rem;
@@ -118,12 +90,9 @@ input[type="password"] {
   font-size: 1rem;
   width: 100%;
 }
-
-/* Password Toggle */
 .password-wrapper {
   position: relative;
 }
-
 .toggle-password {
   position: absolute;
   right: 10px;
@@ -132,21 +101,16 @@ input[type="password"] {
   cursor: pointer;
   font-size: 1.2rem;
 }
-
-/* Remember Me */
 .remember-me {
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
   font-size: 0.9rem;
 }
-
 .remember-me label {
   margin-left: 0.5rem;
   color: #000;
 }
-
-/* Forgot Password */
 .forgot-password {
   font-size: 0.9rem;
   color: #0070c9;
@@ -154,8 +118,6 @@ input[type="password"] {
   margin-bottom: 1rem;
   text-align: right;
 }
-
-/* Login Button */
 .login-button {
   background-color: #ec702d;
   color: #fff;
@@ -167,38 +129,30 @@ input[type="password"] {
   font-size: 1rem;
   margin: 1rem;
 }
-
-/* Security Note */
 .security-note {
   margin-top: 1.5rem;
   text-align: center;
   font-size: 0.8rem;
   color: gray;
 }
-
 @media (max-width: 1920px) {
-
   .login-box {
     padding: 2rem;
     width: 80%;
   }
-
   .login-box-header {
     padding: 0rem;
     width: 80%;
   }
-
   .login-box-footer {
     padding: 3px;
     width: 80%;
   }
-
   .logo {
     display: block;
     margin: 0 auto 3rem;
     width: 200px;
   }
-
   input[type="email"],
   input[type="password"] {
     padding: 1rem;
@@ -208,7 +162,6 @@ input[type="password"] {
     font-size: 1rem;
     width: 100%;
   }
-
   .login-button {
     background-color: #ec702d;
     color: #fff;
@@ -219,25 +172,20 @@ input[type="password"] {
     font-weight: bold;
     font-size: 1rem;
   }
-
   h2 {
     text-align: center;
     margin-bottom: 3rem;
   }
-
   .remember-me {
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
     font-size: 1rem;
   }
-
   .remember-me label {
     margin-left: 0.5rem;
     color: #000;
   }
-
-  /* Forgot Password */
   .forgot-password {
     font-size: 1rem;
     color: #0070c9;
@@ -245,23 +193,18 @@ input[type="password"] {
     margin-bottom: 1rem;
     text-align: right;
   }
-
 }
-
 @media (max-width: 1440px) {
   .login-box {
     padding: 2rem;
   }
-
   .login-box-header {
     padding: 0rem;
   }
-
   .login-box-footer {
     padding: 3px;
   }
 }
-
 @media (max-width: 768px) {
   .login-section {
     flex: 1;
@@ -271,84 +214,58 @@ input[type="password"] {
     min-height: 100vh;
     width: 100%;
   }
-
   .login-box {
     width: 100%;
   }
-
   .login-box-footer {
     width: 100%;
   }
-
   .login-box-header {
     width: 100%;
   }
-
   .logo {
     width: 180px;
   }
-
   h2 {
     font-size: 1.8rem;
   }
 }
-
-/* For mobile 480px and below */
 @media (max-width: 480px) {
   .login-box {
     padding: 1rem;
     width: 100%;
   }
-
   .login-box-header {
     padding: 3px;
   }
-
   .login-box-footer {
     padding: 7px;
   }
-
   .container {
     background: none;
   }
-
   .logo {
     width: 150px;
   }
-
   h2 {
     font-size: 1.5rem;
     margin-bottom: 3.5rem;
   }
-
   input[type="email"],
   input[type="password"] {
     font-size: 0.9rem;
     padding: 1rem;
   }
-
   .forgot-password {
     text-align: center;
     margin-top: 3rem;
   }
-
   .login-button {
     margin: 1.5rem;
   }
 }
-
-
-
-
-
-
-
 .section2 {
-  /* background-color: #4ecdc4;  */
 }
-
-
-
 .info-section {
   flex: 2;
   color: #FFF;
@@ -356,94 +273,67 @@ input[type="password"] {
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
-  /* Make sure it covers screen height */
 }
-
 .text-content {
   max-width: 600px;
   text-align: left;
 }
-
 .text-content h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
-
 .text-content p {
   font-size: 1rem;
   line-height: 1.6;
 }
-
 @media (max-width: 1440px) {
   .info-section {}
-
   .text-content h1 {
     font-size: 30px;
   }
-
   .text-content p {
     font-size: 15px;
   }
 }
-
-/* For tablets (768px to 1024px) */
 @media (max-width: 1024px) {
   .info-section {}
-
   .text-content {
     max-width: 90%;
   }
-
   .text-content h1 {
     font-size: 25px;
   }
-
   .text-content p {
     font-size: 14px;
   }
 }
-
-/* For small tablets and large phones (768px) */
 @media (max-width: 768px) {
   .info-section {
     padding: 2rem;
     align-items: center;
     text-align: center;
   }
-
   .text-content h1 {
     font-size: 1.8rem;
   }
-
   .text-content p {
     font-size: 1rem;
   }
 }
-
-/* For mobile phones (480px and below) */
 @media (max-width: 480px) {
   .info-section {
     padding: 1.5rem;
   }
-
   .text-content h1 {
     font-size: 1.6rem;
   }
-
   .text-content p {
     font-size: 0.95rem;
   }
 }
-
-
-
 .section3 {
-  /* background-color: #1a535c;  */
   justify-content: start;
 }
-
-
-/* Images Content */
 .images-content {
   display: flex;
   justify-content: start;
@@ -451,115 +341,60 @@ input[type="password"] {
   gap: 2rem;
   flex-wrap: wrap;
 }
-
-/* Image Style */
 .desktop-image,
 .mobile-image {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
-  /* Optional: smooth corners */
 }
-
-/* ================================= */
-/*          Responsive Styles        */
-/* ================================= */
-
-/* For large screens (1920px to 1440px) */
 @media (max-width: 1440px) {
   .images-content {
     gap: 1.5rem;
   }
 }
-
-/* For medium screens (1280px) */
 @media (max-width: 1280px) {
   .images-content {
-    /* padding: 0 2rem; */
     gap: 1.5rem;
   }
 }
-
-/* For tablets (768px) */
 @media (max-width: 768px) {
   .images-content {
     flex-direction: column;
-    /* padding: 0 1.5rem; */
     gap: 1rem;
   }
-
   .desktop-image {
     width: 100%;
   }
 }
-
-/* For mobile phones (480px and below) */
 @media (max-width: 480px) {
   .images-content {
-    /* padding: 0 1rem; */
     gap: 1rem;
   }
-
   .desktop-image {
     width: 100%;
   }
 }
-
-
-
-
-/* Responsive Design */
-
-
-/* @media (max-width: 1920px) {
-  .container {
-    flex-direction: column;
-  }
-}
-
-
-@media (max-width: 1440px) {
-  .container {
-    flex-direction: column;
-  }
-} */
-
-/* For screens smaller than 1280px */
-/* @media (max-width: 1280px) {
-  .container {
-    flex-direction: column;
-  }
-} */
-
-/* For tablets 768px */
 @media (max-width: 768px) {
   .section {
     padding: 1.5rem;
   }
-
   h1 {
     font-size: 1.8rem;
   }
-
   p {
     font-size: 1rem;
   }
 }
-
-/* For mobile phones */
 @media (max-width: 480px) {
   .container {
     flex-direction: column;
   }
-
   .section {
     padding: 1rem;
   }
-
   h1 {
     font-size: 1.5rem;
   }
-
   p {
     font-size: 0.9rem;
   }
