@@ -177,16 +177,20 @@ input[type="password"] {
 }
 
 @media (max-width: 1920px) {
+
   .login-box {
     padding: 2rem;
+    width: 80%;
   }
 
   .login-box-header {
     padding: 0rem;
+    width: 80%;
   }
 
   .login-box-footer {
     padding: 3px;
+    width: 80%;
   }
 
   .logo {
