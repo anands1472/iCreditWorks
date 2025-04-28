@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Anand Pilli</title>
   <link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
@@ -13,7 +14,7 @@
     <section class="section section1">
       <div class="login-section">
         <div class="login-section-div">
-          
+
           <div class="login-box-header">
             <img src="images/logo.png" alt="iCreditWorks Logo" class="logo">
             <hr class="solid">
@@ -32,17 +33,16 @@
                 <label for="remember">Remember me</label>
               </div>
               <a href="#" class="forgot-password">Don't remember your password?</a>
-              <button type="submit" class="login-button">Login</button>
+              <div class="loginButtionDiv">
+                <button type="submit" class="login-button">Login</button>
+              </div>
             </form>
-
           </div>
 
           <div class="login-box-footer">
             <span>&#128274; Your security is our priority</span>
           </div>
         </div>
-
-
       </div>
     </section>
 
@@ -63,6 +63,20 @@
       </div>
     </section>
   </div>
+
+  <a href="#" class="chat-button">
+    <img src="images/chat.png" alt="Chat Button">
+  </a>
+  <script>
+    const togglePassword = document.getElementById('togglePassword');
+    const passwordInput = document.getElementById('password');
+
+    togglePassword.addEventListener('click', function () {
+      const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+      passwordInput.setAttribute('type', type);
+      this.classList.toggle('active');
+    });
+  </script>
 </body>
 
 </html>
